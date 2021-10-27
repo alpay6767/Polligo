@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		88DE719D2729E5AA00F909F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DE719C2729E5AA00F909F0 /* Assets.xcassets */; };
 		88DE71A02729E5AA00F909F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DE719F2729E5AA00F909F0 /* Preview Assets.xcassets */; };
 		88DE71A92729F6C200F909F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88DE71A82729F6C200F909F0 /* GoogleService-Info.plist */; };
+		88DE71BB2729FBA300F909F0 /* BabySchoolItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88DE71BA2729FBA300F909F0 /* BabySchoolItalic.ttf */; };
+		88DE71BE272A07A800F909F0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE71BD272A07A800F909F0 /* Question.swift */; };
 		AD2D3FBF2503FB11EADC8947 /* Pods_Polligo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24E2E6D3B2B4BB5BB1E3A78 /* Pods_Polligo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		88DE719F2729E5AA00F909F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88DE71A12729E5AA00F909F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DE71A82729F6C200F909F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88DE71BA2729FBA300F909F0 /* BabySchoolItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BabySchoolItalic.ttf; sourceTree = "<group>"; };
+		88DE71BD272A07A800F909F0 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A24E2E6D3B2B4BB5BB1E3A78 /* Pods_Polligo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polligo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA708DAA0E60A88683FA3C6A /* Pods-Polligo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polligo.release.xcconfig"; path = "Target Support Files/Pods-Polligo/Pods-Polligo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +58,6 @@
 				5ECDBED8FD6E885DC285CF94 /* Pods-Polligo.debug.xcconfig */,
 				AA708DAA0E60A88683FA3C6A /* Pods-Polligo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,12 +82,14 @@
 		88DE71972729E5A900F909F0 /* Polligo */ = {
 			isa = PBXGroup;
 			children = (
+				88DE71C0272A08AF00F909F0 /* Fonts */,
 				88DE71A82729F6C200F909F0 /* GoogleService-Info.plist */,
 				88DE71982729E5A900F909F0 /* PolligoApp.swift */,
 				88DE719A2729E5A900F909F0 /* ContentView.swift */,
 				88DE719C2729E5AA00F909F0 /* Assets.xcassets */,
 				88DE71A12729E5AA00F909F0 /* Info.plist */,
 				88DE719E2729E5AA00F909F0 /* Preview Content */,
+				88DE71BD272A07A800F909F0 /* Question.swift */,
 			);
 			path = Polligo;
 			sourceTree = "<group>";
@@ -95,6 +100,14 @@
 				88DE719F2729E5AA00F909F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88DE71C0272A08AF00F909F0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				88DE71BA2729FBA300F909F0 /* BabySchoolItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DE71BB2729FBA300F909F0 /* BabySchoolItalic.ttf in Resources */,
 				88DE71A02729E5AA00F909F0 /* Preview Assets.xcassets in Resources */,
 				88DE719D2729E5AA00F909F0 /* Assets.xcassets in Resources */,
 				88DE71A92729F6C200F909F0 /* GoogleService-Info.plist in Resources */,
@@ -211,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DE71BE272A07A800F909F0 /* Question.swift in Sources */,
 				88DE719B2729E5A900F909F0 /* ContentView.swift in Sources */,
 				88DE71992729E5A900F909F0 /* PolligoApp.swift in Sources */,
 			);
