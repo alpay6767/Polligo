@@ -37,25 +37,30 @@ struct ContentView: View {
     }
     
     var body: some View {
-        
-        VStack (spacing: 0) {
-        ZStack (alignment: .top) {
-                Color.init(Constants.colorString).ignoresSafeArea()
-                VStack {
-                    logo
-                    Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    header
-                    Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    controls
-                }
-            }
-        ZStack (alignment: .bottom){
-                Color.init(Constants.colorString).ignoresSafeArea()
-            Image("homeMen").resizable().aspectRatio(contentMode: .fit).padding(.bottom).frame(width: 300, height: 400, alignment: .bottom)
-        }.ignoresSafeArea()
+        ZStack {
+            Color.init(Constants.colorString).ignoresSafeArea()
 
+            ScrollView {
+            VStack (spacing: 0) {
+            ZStack (alignment: .top) {
+                    Color.init(Constants.colorString).ignoresSafeArea()
+                    VStack {
+                        logo
+                        Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        header
+                        Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        controls
+                    }
+                }
+            ZStack (alignment: .bottom){
+                    Color.init(Constants.colorString).ignoresSafeArea()
+                Image("homeMen").resizable().aspectRatio(contentMode: .fit).padding(.bottom).frame(width: 300, height: 400, alignment: .bottom)
+            }.ignoresSafeArea()
+
+            }
+            
+            }.ignoresSafeArea()
         }
-        
     }
 }
 
