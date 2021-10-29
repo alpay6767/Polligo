@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		885FFBE9272B4794000B4CA0 /* UmfrageErstellenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885FFBE8272B4794000B4CA0 /* UmfrageErstellenView.swift */; };
+		885FFBEE272B7818000B4CA0 /* FrageHinzufuegenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885FFBED272B7818000B4CA0 /* FrageHinzufuegenButton.swift */; };
 		88A59AA4272A0C79007E670D /* Askania.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A59AA3272A0C79007E670D /* Askania.ttf */; };
 		88A59AAA272A0D35007E670D /* OMEGLE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A59AA9272A0D35007E670D /* OMEGLE.ttf */; };
 		88A59AAE272A105A007E670D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A59AAD272A105A007E670D /* Constants.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		5ECDBED8FD6E885DC285CF94 /* Pods-Polligo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polligo.debug.xcconfig"; path = "Target Support Files/Pods-Polligo/Pods-Polligo.debug.xcconfig"; sourceTree = "<group>"; };
+		885FFBE8272B4794000B4CA0 /* UmfrageErstellenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmfrageErstellenView.swift; sourceTree = "<group>"; };
+		885FFBED272B7818000B4CA0 /* FrageHinzufuegenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrageHinzufuegenButton.swift; sourceTree = "<group>"; };
 		88A59AA3272A0C79007E670D /* Askania.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Askania.ttf; sourceTree = "<group>"; };
 		88A59AA9272A0D35007E670D /* OMEGLE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OMEGLE.ttf; sourceTree = "<group>"; };
 		88A59AAD272A105A007E670D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				88DE71BD272A07A800F909F0 /* Question.swift */,
 				88A59AAD272A105A007E670D /* Constants.swift */,
 				88A59AB0272A15C0007E670D /* HomeButton.swift */,
+				885FFBE8272B4794000B4CA0 /* UmfrageErstellenView.swift */,
+				885FFBED272B7818000B4CA0 /* FrageHinzufuegenButton.swift */,
 			);
 			path = Polligo;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885FFBEE272B7818000B4CA0 /* FrageHinzufuegenButton.swift in Sources */,
 				88DE71BE272A07A800F909F0 /* Question.swift in Sources */,
+				885FFBE9272B4794000B4CA0 /* UmfrageErstellenView.swift in Sources */,
 				88DE719B2729E5A900F909F0 /* ContentView.swift in Sources */,
 				88DE71992729E5A900F909F0 /* PolligoApp.swift in Sources */,
 				88A59AB1272A15C0007E670D /* HomeButton.swift in Sources */,
