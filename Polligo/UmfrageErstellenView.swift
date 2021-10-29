@@ -42,7 +42,14 @@ struct UmfrageErstellenView: View {
                         .padding(.top, 20)
                         .foregroundColor(.white)
                     FrageHinzufuegenButton(name: "Antwort hinzufügen", buttonColor: Constants.umfrageColorString, textColor: .white) {
-                        self.antwortenArray.append(Question.Answer(content: "", id: 1))
+                        let newanswer = Question.Answer(content: "", id: 1)
+                        self.antwortenArray.append(newanswer)
+                    }
+                    FrageHinzufuegenButton(name: "Speichern", buttonColor: Constants.teilnehmenColorString, textColor: .white) {
+                        let currentq = Question(questionId: 1, ammountOfAnswers: antwortenArray.count, askedQuestion: frageString, isMultipleChoise: false, createAnswers: getContentOfAnswer(index:))
+
+                        print(antwortenArray)
+                        print(currentq.possibleAnswers)
                     }
                     
                     List {
@@ -59,9 +66,13 @@ struct UmfrageErstellenView: View {
         }
     }
     
+    func getContentOfAnswer(index: Int) -> String {
+        return antwortenArray[index].content
+    }
+    
     func delete(at offsets: IndexSet) {
         antwortenArray.remove(atOffsets: offsets)
-        }
+    }
 
 }
 
@@ -74,13 +85,19 @@ struct UmfrageErstellenView_Previews: PreviewProvider {
 }
 
 struct AnswerRow: View {
-    var answer: Question.Answer
+    @State var answer: Question.Answer
     @State var string = ""
+    
+    
 
     var body: some View {
         GeometryReader { geometry in
 
-        TextField("Antwort ...", text: $string)
+        TextField("Antwort ...", text: $string, onEditingChanged: { (changed) in
+            self.answer.content = "Hi"
+        }) {
+            self.answer.content = "Bye"
+        }
             .padding()
             .frame(width: geometry.size.width-70, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))

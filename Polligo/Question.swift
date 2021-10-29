@@ -46,7 +46,7 @@ struct Question{
 
     struct Answer: Identifiable{
         var isChoosen: Bool = false
-        let content: String
+        var content: String
         let id: Int
 
     }
